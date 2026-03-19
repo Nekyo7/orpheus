@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restricted Node :: Personal File</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="personal">
+  <div class="screen-noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="mission-overlay hidden" id="mission-overlay">
+    <div class="mission-card">
+      <p class="eyebrow">Taskforce Accepted</p>
+      <h2>Congratulations</h2>
+      <p>Collect the files from the nearest station.</p>
+      <button class="primary-btn inline-btn" id="close-mission-overlay">Return To Dossier</button>
+    </div>
+  </div>
+
+  <main class="page-shell print-shell" id="print-root">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Recovered Subject Dossier</p>
+        <h1 class="glitch" data-text="Personal File">Personal File</h1>
+      </div>
+      <div class="status-cluster">
+        <button class="primary-btn inline-btn" id="print-file">PRINT FILE</button>
+      </div>
+    </header>
+
+    <section class="banner-panel reveal-panel">
+      <div>
+        <p class="hero-alert warning">SUBJECT STATUS: DECEASED?</p>
+        <h2>A MANHUNT IS ON THE RUN TO CATCH THE KILLER</h2>
+      </div>
+    </section>
+
+    <section class="dossier-grid">
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Profile</p>
+          <h3>Vaibhav Rajput</h3>
+        </div>
+        <ul class="detail-list">
+          <li><span>Name</span><strong>██████</strong></li>
+          <li><span>Codename</span><strong>"Jungle ka rakhwala"</strong></li>
+          <li><span>Status</span><strong>Deceased (Unconfirmed)</strong></li>
+          <li><span>Threat Level</span><strong>EXTREME</strong></li>
+          <li><span>Known Habits</span><strong>Frequently elopes with group mens</strong></li>
+          <li><span>Last Seen</span><strong>bsn block</strong></li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Activity Logs</p>
+          <h3>Observed Behavior</h3>
+        </div>
+        <div class="log-stack">
+          <p>[08:11] Subject entered room and immediately improved morale.</p>
+          <p>[12:42] Subject exhibited elite snack-detection capabilities.</p>
+          <p>[18:05] Subject generated laughter spike across civilian network.</p>
+          <p>[23:59] bro got cooked</p>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Analyst Notes</p>
+          <h3>Internal Findings</h3>
+        </div>
+        <ul class="notes-list">
+          <li>The subject was found dead.</li>
+          <li>We require a highly intelligent individual for the task.</li>
+          <li>Task Risk: Extremely High.</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Taskforce</p>
+          <h3>Field Recruitment</h3>
+        </div>
+        <p class="reveal-message">
+          Command is assembling a strike unit to track the killer before the trail goes cold.
+          Selection is limited to operators willing to enter the dark and come back with answers.
+        </p>
+        <button class="primary-btn inline-btn" id="join-taskforce">JOIN THE TASKFORCE</button>
+        <p class="form-message" id="taskforce-message"></p>
+      </article>
+
+      <article class="panel wide-panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Recovered Evidence</p>
+          <h3>ORPHEUS Case File</h3>
+        </div>
+        <p class="muted">
+          Attached document recovered from the archive. Review before joining field operations.
+        </p>
+        <div class="evidence-actions">
+          <a class="primary-btn inline-btn" href="ORPHEUS.pdf" target="_blank" rel="noopener noreferrer">OPEN FILE</a>
+          <a class="primary-btn inline-btn" href="ORPHEUS.pdf" download>DOWNLOAD FILE</a>
+        </div>
+        <object class="pdf-frame" data="ORPHEUS.pdf" type="application/pdf">
+          <p class="muted">
+            PDF preview unavailable in this browser.
+            <a href="ORPHEUS.pdf" target="_blank" rel="noopener noreferrer">Open ORPHEUS.pdf</a>
+          </p>
+        </object>
+      </article>
+    </section>
+
+    <footer class="print-footer">
+      <p>Collect the files from the nearest station.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

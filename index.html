@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restricted Node :: Entry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="entry">
+  <div class="screen-noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loading-box">
+      <p class="loading-label glitch" data-text="SECURE HANDSHAKE">SECURE HANDSHAKE</p>
+      <p class="loading-message" id="loading-message">Decrypting recovered route...</p>
+      <div class="loading-bar">
+        <span id="loading-progress"></span>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <div>
+        <h1 class="glitch" data-text="Black Vault Mirror">Black Vault Mirror</h1>
+      </div>
+      <div class="status-cluster">
+        <span class="status-pill danger">Trace Shield: Active</span>
+        <span class="status-pill">Node: INBOUND-77</span>
+      </div>
+    </header>
+
+    <section class="hero-grid">
+      <article class="hero-card">
+        <p class="hero-alert" id="entry-status">ACCESS GRANTED</p>
+        <h2>Decoded route accepted.</h2>
+        <p class="muted">
+          Entry to this mirror requires a recovered key delivered through an off-grid channel.
+          Unauthorized observation attempts may trigger ghost telemetry and decoy payloads.
+        </p>
+        <div class="warning-strip">
+          <span>This activity has been logged.</span>
+          <span>IP traced.</span>
+          <span>Observer flag: pending.</span>
+        </div>
+      </article>
+
+      <aside class="terminal-card">
+        <div class="terminal-header">
+          <span>SYSLOG_STREAM</span>
+          <span class="blinker">LIVE</span>
+        </div>
+        <div class="terminal-feed" id="entry-log" aria-live="polite"></div>
+      </aside>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Puzzle 1</p>
+          <h3>Access Key Recovery</h3>
+        </div>
+        <p>
+          Analysts recovered a corrupted message from the decoded URL packet.
+          Only verified operators can reconstruct the next clearance key.
+        </p>
+        <div class="cipher-box">
+          <p class="label">Recovered Payload</p>
+          <code id="cipher-text">01001111 01010010 01010000 01001000 01000101 01010101 01010011</code>
+          <p class="hint">
+            Hint: the machine speaks in 8-bit bursts. Convert, then enter the result in the terminal.
+          </p>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Terminal</p>
+          <h3>Clearance Checkpoint</h3>
+        </div>
+        <form id="access-form" class="terminal-form">
+          <label for="access-code">`/auth --token`</label>
+          <input id="access-code" name="access-code" type="text" autocomplete="off" spellcheck="false" placeholder="ENTER ACCESS KEY">
+          <button type="submit" class="primary-btn">Authorize Database Access</button>
+        </form>
+        <p class="form-message" id="access-message">Awaiting key input.</p>
+      </article>
+    </section>
+
+    <section class="footer-note">
+      <p>
+        Mirror note: operators who inspect the marked glyphs may notice the system favors names tied to the underworld.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

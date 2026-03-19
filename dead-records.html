@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restricted Node :: Dead Records</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="deceased">
+  <div class="screen-noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Mortality Registry</p>
+        <h1 class="glitch" data-text="Deceased Subjects">Deceased Subjects</h1>
+      </div>
+      <nav class="status-cluster">
+        <a class="status-pill link-pill" href="database.html">Back To Database</a>
+      </nav>
+    </header>
+
+    <section class="banner-panel">
+      <div>
+        <p class="hero-alert warning">STATUS: SEALED</p>
+        <h2>Casualty index and inactive identities.</h2>
+      </div>
+      <p class="muted">
+        Every record below is fictional. One entry is flagged with impossible telemetry and can be reopened with the correct subject key.
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="records-table">
+        <div class="records-head">
+          <span>Name</span>
+          <span>ID Number</span>
+          <span>Status</span>
+          <span>Date</span>
+        </div>
+        <div class="records-row">
+          <span>Marla Soren</span>
+          <span>D-118-442</span>
+          <span class="danger-text">DECEASED</span>
+          <span>2009-04-12</span>
+        </div>
+        <div class="records-row">
+          <span>Elias Thorn</span>
+          <span>D-204-019</span>
+          <span class="danger-text">DECEASED</span>
+          <span>2013-11-27</span>
+        </div>
+        <div class="records-row">
+          <span>Juniper Vale</span>
+          <span>D-404-121</span>
+          <span class="danger-text">DECEASED</span>
+          <span>2018-02-06</span>
+        </div>
+        <div class="records-row special-row clue-hover" data-clue="Anomaly seal accepts the assembled archive key.">
+          <span>SUBJECT MIRTH</span>
+          <span>X-CAK-404</span>
+          <span class="warning-text">DECEASED?</span>
+          <span>CLASSIFIED</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Puzzle 2</p>
+          <h3>Unlock Personal File</h3>
+        </div>
+        <p>
+          The anomaly record requires a subject key. Clues were embedded in the archive index,
+          in hover metadata, and in the record identifier above.
+        </p>
+        <form id="subject-form" class="terminal-form">
+          <label for="subject-code">`/open --subject`</label>
+          <input id="subject-code" name="subject-code" type="text" autocomplete="off" spellcheck="false" placeholder="ENTER SUBJECT KEY">
+          <button type="submit" class="primary-btn">Decrypt Personal File</button>
+        </form>
+        <p class="form-message" id="subject-message">Awaiting subject key.</p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Operator Note</p>
+          <h3>Registry Margin</h3>
+        </div>
+        <p class="muted">
+          If the archive gave you a city, a stone, and a burn code, you already have enough.
+          This file was never supposed to stay dead.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
